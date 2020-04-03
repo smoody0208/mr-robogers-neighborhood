@@ -1,22 +1,24 @@
+//Back-end
+
 function robogersNeighborhood(message) {
   var result = [];
   var beepBoop = ["beep", "boop", "won't you be my neighbor"];
+  var num = [1, 2, 3];
 
   if (message<=0) {
     alert("Please Enter a Positive Number");
+    return "";
     
   }
 
-  for(var i=1; i<= message; i++){
-    if (i === 3) {
-      result.push(beepBoop[2]);
-    } else if (i === 1) {
-      result.push("beep");
-    } else if (i === 2) {
-      result.push("boop");
-    } else {
-      result.push("" + i);
-    }
+  for(var i=0; i<= message; i++){
+    if (i === num[2]) {
+      result.push(" " + beepBoop[2]);
+    } else if (i === num[0]) {
+      result.push(" " + beepBoop[0]);
+    } else if (i === num[1]) {
+      result.push(" " + beepBoop[1]);
+    } 
   }
   return result;
 };

@@ -10,23 +10,25 @@
   <title>Document</title>
 </head>
   <body>
-    <div class="container-jumbotron">
-      <h1>Mr. Robogers Neighborhood</h1>
-      <p>Enter a number and have some fun ;)</p>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Mr. Roboger's Neighborhood</h1>
+        <p class="lead">Enter a numer below to have some fun!</p>
+      </div>
     </div>
 
-    <div class="container">
+    <div class="container vertical-align">
       <form id="robogers">
         <div class="form-group">
           <label for="message">Enter a number:</label>
-          <input id="messageInput" class="form-control" type="number">
+          <input id="messageInput" class="form-control form-control-lg" type="number">
         </div>
-        <button type="submit" class="btn btn-danger" id="submit">Click for fun!</button>
+        <button type="submit" class="btn btn-info" id="submit">Click for fun!</button>
       </form>
       
       <div id="result">
         <ul>
-          
+
         </ul>
       </div>
     </div>
