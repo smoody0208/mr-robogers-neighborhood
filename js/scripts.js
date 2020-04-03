@@ -12,12 +12,12 @@ function robogersNeighborhood(message) {
   }
 
   for(var i=0; i<= message; i++){
-    if (i === num[2]) {
+    if (i.toString().includes(num[2])) {
       result.push(" " + beepBoop[2]);
-    } else if (i === num[0]) {
-      result.push(" " + beepBoop[0]);
-    } else if (i === num[1]) {
+    } else if (i.toString().includes(num[1])) {
       result.push(" " + beepBoop[1]);
+    } else if (i.toString().includes(num[0])) {
+      result.push(" " + beepBoop[0]);
     } else {
       result.push(" " + i);
     }
