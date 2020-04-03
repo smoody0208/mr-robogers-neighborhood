@@ -1,0 +1,12 @@
+.jumbotron {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url(/img/terminator.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+h1 {
+  font-size: large;
+}
