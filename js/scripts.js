@@ -8,7 +8,7 @@ function robogersNeighborhood(message) {
   var nameInput = $("#nameInput").val();
   console.log(nameInput);
 
-  if (message<=0) {
+  if (message<0) {
     alert("Please Enter a Positive Number");
     return "";
     
@@ -24,7 +24,6 @@ function robogersNeighborhood(message) {
       result.push(" " + beepBoop[1]);
     } else if (i.toString().includes(num[0])) {
       result.push(" " + beepBoop[0]);
-
     } else {
       result.push(" " + i);
     }
