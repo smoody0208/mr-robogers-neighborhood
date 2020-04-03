@@ -1,7 +1,7 @@
 function robogersNeighborhood(message) {
   var result = [];
 
-  if (number<0) {
+  if (message < 0) {
     alert("Please Enter a Positive Number");
     return "";
     console.log(message);
@@ -20,3 +20,17 @@ function robogersNeighborhood(message) {
   }
   return result;
 };
+
+//Front-end:
+
+$(document).ready(function(){
+  $("form#robogers").submit(function(event){
+    event.preventDefault();
+    var result = robogersNeighborhood(message)
+    var message = $("#messageInput").val()
+
+    result.forEach(function(item){
+      $("ul").append("<li>"+item+"</li>");
+    });
+  });
+});
