@@ -4,7 +4,7 @@ function robogersNeighborhood(message) {
   if (message < 0) {
     alert("Please Enter a Positive Number");
     return "";
-    console.log(message);
+    
   }
 
   for(var i = 0; i<= message; i++){
@@ -13,7 +13,7 @@ function robogersNeighborhood(message) {
     } else if (i === 1) {
       result.push("beep");
     } else if (i === 2) {
-      result.push("ping");
+      result.push("boop");
     } else {
       result.push(i);
     }
@@ -26,11 +26,10 @@ function robogersNeighborhood(message) {
 $(document).ready(function(){
   $("form#robogers").submit(function(event){
     event.preventDefault();
-    var result = robogersNeighborhood(message)
-    var message = $("#messageInput").val()
-
-    result.forEach(function(item){
-      $("ul").append("<li>"+item+"</li>");
-    });
+    var result = robogersNeighborhood(message);
+    var message = parseInt($("input#messageInput").val());
+  console.log(result);
+  console.log(message);
   });
+  $("#result").show();
 });
