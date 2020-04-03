@@ -18,7 +18,9 @@ function robogersNeighborhood(message) {
       result.push(" " + beepBoop[0]);
     } else if (i === num[1]) {
       result.push(" " + beepBoop[1]);
-    } 
+    } else {
+      result.push(" " + i);
+    }
   }
   return result;
 };
